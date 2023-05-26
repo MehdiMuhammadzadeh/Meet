@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: vazirmatnThin;
+    font-weight: 100;
+    src: url("./assets/webfonts/Vazirmatn-Thin.woff2") format("woff");
+  }
+
+  @font-face {
+    font-family: vazirmatnExLight;
+    font-weight: 200;
+    src: url("./assets/webfonts/Vazirmatn-ExtraLight.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnLight;
+    font-weight: 300;
+    src: url("./assets/webfonts/Vazirmatn-Light.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatn;
+    font-weight: 400;
+    src: url("./assets/webfonts/Vazirmatn-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnMedium;
+    font-weight: 500;
+    src: url("./assets/webfonts/Vazirmatn-Medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnSemiB;
+    font-weight: 600;
+    src: url("./assets/webfonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnBold;
+    font-weight: 700;
+    src: url("./assets/webfonts/Vazirmatn-Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatnExB;
+    font-weight: 800;
+    src: url("./assets/webfonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: shabnam;
+    font-weight: 400;
+    src: url("./assets/webfonts/shabnamFont/Shabnam-FD.woff") format("woff2");
+  }
+  @font-face {
+    font-family: shabnamBold;
+    font-weight: 800;
+    src: url("./assets/webfonts/shabnamFont/Shabnam-Bold-FD.woff2")
+      format("woff2");
+  }
+}
+
+.my-calendar {
+  width: 90% !important;
+}
+
+.my-calendar .rmdp-top-class {
+  display: block !important;
+  width: 100%;
+}
+
+.my-calendar .rmdp-day-picker {
+  display: block !important;
+  width: 100%;
+}
+
+.my-calendar .rmdp-week-day {
+  width: 100%;
+}
+
+.my-calendar .rmdp-day {
+  width: 100% !important;
+  height: 100px;
+}
+
+.rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover,
+.rmdp-today > span{
+  background-color: unset !important;
+}
